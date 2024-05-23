@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<div class="container-fluid text-center py-5">
+    <div id="#custom-background" class="form-container border border-light">
+        <h1 class="text-white my-2">Contacto</h1>
+        <form class="d-flex flex-column align-items-center text-white my-3" method="post">
+            {% csrf_token %}
+            <div class="form-group w-100">
+                {{ form.name.label_tag }}
+                {{ form.name }}
+            </div>
+            <div class="form-group w-100">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+            <div class="form-group w-100">
+                {{ form.message.label_tag }}
+                {{ form.message }}
+            </div>
+            <button id="stylebutton" type="submit" class="text-black">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}

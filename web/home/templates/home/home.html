@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<header class="header my-5">
+    <div class="container">
+        <div class="my-4">
+            <img src="../../../static/images/file4.png" alt=""
+                style="border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08); width: 60px; height: 60px;">
+            <a href="">
+                <div>
+
+                </div>
+            </a>
+        </div>
+        <div class="header-content" style="max-width: 600px;">
+            <div class="profile">
+                <h1 class="text-white">¡Hola! Soy Mauricio Millavil</h1>
+                <p class="text-white fs-4">Hace un año decidí reinventarme laboralmente y hoy en día soy <span
+                        style="background-color: rgba(255, 255, 255, 0.4);"><span class="fw-bold"
+                            style="color: #FFD700;">Desarrollador web</span> <span class="fw-bold"
+                            style="color: #31293D;">Full Stack.</span></span> </p>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list d-flex" style="list-style: none; ">
+                    <li class="nav-item me-3"><a target="_blank" href="https://drive.google.com/file/d/1tg4mn5YfSofEqqbnI-0LsXV0_pr8Xf9n/view"><button id="stylebuttoncv" type="button">CV</button></a></li>
+                    <li class="nav-item me-3"><a href="#vermas"><button id="stylebuttonvermas" type="button">Ver Más</button></a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<article class="timeline my-5">
+
+    <h2 class="text-white"><i class="fa-solid fa-briefcase fa-sm ms-5 me-3 my-5"></i>Experiencia laboral</h2>
+    <div class="timeline-item">
+        <div style="display: flex d-flex; border-left: 1px solid #ffffff; margin: auto; width: 90%;">
+            
+            <div class="timeline-item flex d-flex" style="display: flex; align-items: start;">
+                <span class="fs-1 fw-bold" style="color: #FFD700; position: relative; left: -8px; top: -15px; z-index: 0; align-items: start;">•</span>
+                <div class="circle" style="position: relative; width: 5%;">
+
+                </div>
+                <div style="width: 30%;">
+                    <h4 style="color: #FFD700; width: 100%;">Desarrollador Web</h3>
+                    <h5 class="" style="color: white;">Kine Conecta</h4>
+                    <p style="color: white;">Abril 2024 - Presente</p>
+                </div>
+                <div class="timeline-content" style="width: 50%;">
+                    <p class="text-white">Responsable del diseño y desarrollo de sitio web utilizando tecnologías
+                        modernas
+                        como
+                        React, Node.js,
+                        Mysql y Tailwind.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item flex d-flex" style="display: flex; align-items: start;">
+                <span class="fs-1 fw-bold" style="color: #FFD700; position: relative; left: -8px; top: -15px; z-index: 0; align-items: start; padding: 0px;">•</span>
+                <div class="" style="width: 5%;">
+
+                </div>
+                <div style="width: 30%;">
+                    <h4 style="color: #FFD700; width: 100%;">Desarrollador Web</h3>
+                    <h5 class="" style="color: white;">Magy Print</h4>
+                    <p style="color: white;">Agosto 2023 - Septiembre 2023</p>
+                </div>
+                <div class="timeline-content" style="width: 50%;">
+                    <p class="text-white">Responsable del desarrollo Frontend de sitio web utilizando variadas
+                        tecnologías
+                        como
+                        React, Node.js, MongoDB y Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+
+
+</article>
+
+<aside id="vermas" class="mb-5">
+    <h2 class="text-white"><i class="fa-solid fa-user fa-sm ms-5 me-3 my-5"></i>Acerca de mí</h3>
+    <div class="about text-white flex mx-5"
+        style=" justify-content: center !important; align-items: center; margin: auto;">
+        
+        <p style="width: 90%; margin: auto;">Soy Mauricio Millavil, recientemente decidí reinventarme laboralmente y enfocarme en el
+            área TI, por lo cual comencé a realizar diferentes cursos de programacion y desarrollo web enfocado
+            principalmente en <span style="color: #FFD700;">JavaScript, React y Python</span> en diferentes instituciones. Por lo cual estoy buscando nuevas
+            oportunidades para crecer y desarrollarme tanto personal como profesionalmente, es por eso que me encuentro
+            en la busqueda de un empleo formal.</p>
+    </div>
+</aside>
+
+{% endblock %}

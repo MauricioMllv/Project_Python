@@ -1,0 +1,11 @@
+body {
+    background-color: #101010;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1200px; /* Establece el ancho máximo */
+    margin: 0 auto;    /* Centra el contenedor horizontalmente */
+    padding: 0 15px;   /* Añade un pequeño padding a los lados */
+    box-sizing: border-box;
+}

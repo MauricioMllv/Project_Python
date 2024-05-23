@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<div id="blogcontent" class="my-5">
+    <div>
+        <div>
+            <h5 class="mb-5 fs-4 text-center">{{ blog.title }}</h5>
+            <div>
+                <p class="" style="color: black !important;">{{ blog.content|linebreaks }}</p>
+            </div>
+            <br>
+            <p style="text-align: right; color: #FFD700;">Publicado el: {{ blog.date_posted }}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

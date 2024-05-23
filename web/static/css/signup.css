@@ -1,0 +1,137 @@
+/* Asegúrate de incluir este CSS en tu archivo CSS principal o en una etiqueta <style> en tu HTML */
+
+.form-container {
+    display: inline-block;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px !important;
+    border-color: #A0A0A0 !important;
+    border-radius: 20px !important;
+    background-color: #31293D;
+    fill 0 linear-gradient(#0001, #000);
+}
+
+.form-container form {
+    width: 100%;  /* Asegura que el formulario ocupe el ancho del contenedor */
+}
+
+.form-container form p {
+    width: 100%;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: none; /* Oculta las etiquetas */
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea,
+.form-container select {
+    width: 100%; /* Hace que los campos de entrada ocupen el 100% del contenedor del formulario */
+    max-width: 600px; /* Ancho máximo para que no se estire demasiado */
+    padding: 10px; /* Espaciado interno para mejorar la usabilidad */
+    margin-bottom: 15px; /* Espaciado entre los campos */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+#buttonperfil {
+    border: none;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    background-color: #FFD700 ;
+    color: black;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow: 0 4px 6px -1px #31293D, 0 2px 4px -1px #31293D;
+    transition: all .6s ease;
+  }
+  
+  #buttonperfil:hover {
+    box-shadow: 0 10px 15px -3px #31293D, 0 4px 6px -2px #31293D;
+  }
+  
+  #buttonperfil:focus,#buttonperfil:active {
+    opacity: .85;
+    box-shadow: none;
+  }
+  
+
+
+  /* ------ */
+
+  #buttonperfil2 {
+    border: none;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    background-color: #FFD700;
+    color: black;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow: 0 4px 6px -1px #31293D, 0 2px 4px -1px #31293D;
+    transition: all .6s ease;
+}
+
+#buttonperfil2:hover {
+    box-shadow: 0 10px 15px -3px #31293D, 0 4px 6px -2px #31293D;
+}
+
+#buttonperfil2:focus, #buttonperfil:active {
+    opacity: .85;
+    box-shadow: none;
+}
+
+
+/* -------- */
+
+#buttonperfil3 {
+    border: none;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    background-color: #FFD700;
+    color: black;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow: 0 4px 6px -1px #101010, 0 2px 4px -1px #101010;
+    transition: all .6s ease;
+}
+
+#buttonperfil3:hover {
+    box-shadow: 0 10px 15px -3px #101010, 0 4px 6px -2px #101010;
+}
+
+#buttonperfil3:focus, #buttonperfil:active {
+    opacity: .85;
+    box-shadow: none;
+}
+

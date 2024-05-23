@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<div class="blogcontent">
+    <h2 class="fs-1 text-white my-5 text-center">Blog</h2>
+    <div>
+        <div>
+            {% for blog in blogs %}
+                <div class="articulo">
+                    <div><h5>{{ blog.title }}</h5></div>
+                    <div>
+                    <p>{{ blog.content|slice:":301" }}...</p>
+                    <a href="{% url 'blog_detail' blog.id %}" ><button type="button" class="btn btn-outline-secondary">Leer Completo</button></a>
+                    </div>
+                    <div><p style="text-align: right; color: #FFD700;">Publicado el: {{ blog.date_posted }}</p></div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+    
+{% endblock %}

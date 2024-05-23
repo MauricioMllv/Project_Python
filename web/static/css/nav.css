@@ -1,0 +1,14 @@
+#navbar {
+    background-color: #101010;
+    margin-left: 60px;
+    
+}
+
+#navbarNavDropdown ul li a {
+    color: white;
+}
+
+#navbar div div {
+    display: flex;
+    justify-content: flex-end;
+}

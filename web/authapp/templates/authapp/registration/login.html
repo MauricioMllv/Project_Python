@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="container-fluid text-center my-4">
+    <div>
+        <h2 class="text-white my-4">Iniciar sesión</h2>
+    </div>
+    <div class="form-container">
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group mt-2">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control mt-2" id="username" name="username" placeholder="Nombre de Usuario">
+            </div>
+            <div class="form-group mt-2">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control mt-2" id="password" name="password" placeholder="Contraseña">
+            </div>
+            <div class="form-group mt-4 d-flex justify-content-between">
+                <button id="buttonperfil3" class="m-2" type="submit">Entrar</button>
+                <a id="buttonperfil3" href="{% url 'signup' %}" class="btn m-2 mx-3">Registrarme</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
